@@ -18,6 +18,7 @@
         <xsl:text>Nome do emitente</xsl:text><xsl:text>&#x9;</xsl:text>
         <xsl:text>Nome do destinatario</xsl:text><xsl:text>&#x9;</xsl:text>
         <xsl:text>Endereco do destinatario</xsl:text><xsl:text>&#x9;</xsl:text>
+        <xsl:text>Data de emissão</xsl:text><xsl:text>&#x9;</xsl:text>
         <xsl:text>Valor total</xsl:text><xsl:text>&#x9;</xsl:text>
         <xsl:text>&#xa;</xsl:text>
         <xsl:value-of select="nfe:nfeProc/nfe:NFe/nfe:infNFe/nfe:ide/nfe:serie"/><xsl:text>&#x9;</xsl:text>
@@ -25,6 +26,7 @@
         <xsl:value-of select="nfe:nfeProc/nfe:NFe/nfe:infNFe/nfe:emit/nfe:xNome"/><xsl:text>&#x9;</xsl:text>
         <xsl:value-of select="nfe:nfeProc/nfe:NFe/nfe:infNFe/nfe:dest/nfe:xNome"/><xsl:text>&#x9;</xsl:text>
         <xsl:value-of select="nfe:nfeProc/nfe:NFe/nfe:infNFe/nfe:dest/nfe:enderDest/nfe:xLgr"/><xsl:text>&#x9;</xsl:text>
+        <xsl:value-of select="nfe:nfeProc/nfe:NFe/nfe:infNFe/nfe:ide/nfe:dhEmi"/><xsl:text>&#x9;</xsl:text>
         <xsl:value-of select="nfe:nfeProc/nfe:NFe/nfe:infNFe/nfe:total/nfe:ICMSTot/nfe:vProd"/><xsl:text>&#x9;</xsl:text>
         <xsl:text>&#xa;</xsl:text>
     </xsl:template>
